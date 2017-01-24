@@ -1,0 +1,7 @@
+git init
+git status
+git clone <repo>
+git add --all
+git remote -v
+git push origin master
+git commit -m "bah bah"

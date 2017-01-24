@@ -1,0 +1,16 @@
+- knife ssl check
+- knife cookbook upload <cookname name>
+- knife upload cookbooks
+- chef generate attribute cookbooks/learn_lamp_stack
+- knife bootstrap <ip> --ssh-user ec2-user --sudo --identity-file ~/.ssh/<name>.pem --node-name <name> --run-list 'recipe[learn_lamp_stack]'
+- chef generate recipe cookbooks/learn_lamp_stack firewall
+- chef exec rspec --color spec/unit/recipes/default_spec.rb
+- knife supermarket show selinux | grep latest
+- knife node list
+- knife node <node name> show
+- knife ssh 'name:<node_name>' 'sudo chef-client' --ssh-user USER --identity-file IDENTITY_FILE --attribute ec2.public_hostname
+- cd <cookbook> ; berks init .
+- berks install;  berks upload 
+- sudo SSL_CERT_FILE=../../.chef/ca_certs/opsworks-cm-ca-2016-root.pem berks upload
+
+
